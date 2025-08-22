@@ -1,0 +1,36 @@
+# CODEOWNERS file for order-framework-414
+# Global owners - will be requested for all PRs
+* @Armor-test/unit-cloud @Armor-test/squad-cloud @Armor-test/team-logging
+
+# Directory ownership
+/src/ @Armor-test/dept-notifications @Armor-test/dept-data @Armor-test/dept-reporting
+/middleware/ @Armor-test/squad-reporting @Armor-test/dept-billing @Armor-test/unit-cloud
+/components/ @Armor-test/team-research @Armor-test/squad-database
+/internal/ @Armor-test/squad-cloud @Armor-test/team-governance
+/build/ @Armor-test/team-core @Armor-test/dept-reporting
+/migrations/ @Armor-test/grp-storage @Armor-test/team-research
+/services/ @Armor-test/team-research @Armor-test/dept-ui @Armor-test/squad-apps
+/dist/ @Armor-test/unit-devops @Armor-test/squad-cloud @Armor-test/squad-search
+/deploy/ @Armor-test/grp-reporting @Armor-test/grp-api
+/docs/ @Armor-test/grp-reporting @Armor-test/unit-test @Armor-test/squad-cache
+/tools/ @Armor-test/squad-cache @Armor-test/squad-apps @Armor-test/unit-design
+/pages/ @Armor-test/squad-database @Armor-test/dept-test
+/models/ @Armor-test/squad-mobile @Armor-test/team-security @Armor-test/team-notifications
+
+# File type ownership
+*.rs @Armor-test/dept-data @Armor-test/squad-tooling
+*.proto @Armor-test/dept-data @Armor-test/squad-ux @Armor-test/team-governance
+*.tf @Armor-test/squad-cache @Armor-test/dept-notifications @Armor-test/team-core
+*.config @Armor-test/squad-payments @Armor-test/dept-ui @Armor-test/squad-tooling
+*.js @Armor-test/squad-qa @Armor-test/squad-apps
+*.json @Armor-test/grp-ui @Armor-test/dept-reporting
+*.graphql @Armor-test/team-research @Armor-test/grp-storage
+*.cs @Armor-test/grp-payments @Armor-test/squad-api
+*.kt @Armor-test/dept-reliability @Armor-test/unit-governance
+*.scss @Armor-test/squad-api @Armor-test/team-reporting
+
+# Security and special files
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+Dockerfile @Armor-test/devops @Armor-test/infra
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
